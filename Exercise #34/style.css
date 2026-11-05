@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #1e293b;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+li {
+    background: #f1f5f9;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    color: #334155;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn {
+    background: #16a34a;
+}
+
+.add-btn:hover {
+    background: #15803d;
+}
+
+.remove-btn {
+    background: #dc2626;
+}
+
+.remove-btn:hover {
+    background: #b91c1c;
+}
+
+#message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
